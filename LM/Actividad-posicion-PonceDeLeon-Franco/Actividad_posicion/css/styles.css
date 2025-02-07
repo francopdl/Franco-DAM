@@ -1,0 +1,128 @@
+/* Importando una fuente personalizada de Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}
+
+body{
+    background: linear-gradient(to right,rgb(46, 81, 109), rgb(52, 144, 207));
+    
+
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  /*NO TOCAR*/
+}
+
+
+.card {
+    width: 25vw;
+    height: 15vw;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-family: "Poppins", sans-serif;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  
+  .card-background {
+    width: 25vw;
+    height: 15vw;
+    background: linear-gradient(to right,rgb(214, 37, 151),rgb(33, 222, 234));
+    position: absolute;
+    z-index: 0;
+    border-radius: 10px;
+
+    
+  }
+  
+  .card-content {
+    z-index: 1;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    
+  
+   
+  }
+  
+  .name {
+    font-size: 1.5rem;
+   color: white;
+    margin-bottom: 10px;
+    
+  }
+  
+  .description {
+    font-size: 1rem;
+    margin: 0 10px;
+    text-align: center;
+    color: white;
+
+    
+  }
+  
+  .contact-btn {
+    text-decoration: dashed;
+    color: white;
+    border-style: solid ;
+    border-radius:20vw;
+    padding: 10px 20px;
+    margin-top: 10px;
+    
+
+  }
+  
+  .contact-btn:hover {
+
+
+
+  }
+  
+  
+
+.floating-element {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle, #ffeb3b, #ff5722);
+  border-radius: 50%;
+  opacity: 0.8;
+  z-index: 10;
+  margin: 10px;
+  animation: move 3s infinite alternate;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(20px);
+  }
+}
